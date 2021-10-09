@@ -19,5 +19,11 @@
         <br />
     {% endfor %}    
 
+    <div class="card-footer text-center texr-muted" >
+        <a href="{% url 'article_edit' article.pk %}">Edit</a>
+        <a href=" {& url 'article_delete' article.pk &} ">Delete</a>
+
+    </div>
+
 
 {% endblock content %}
